@@ -1,6 +1,5 @@
 const url = '	https://api.adviceslip.com/advice'
 const url1 = 'https://api.quotable.io/quotes/random'
-const url2 = 'https://quotesondesign.com/wp-json/wp/v2/posts/?orderby=rand'
 const url3 = 'https://stoic.tekloon.net/stoic-quote'
 const urlm = 'https://api.gameofthronesquotes.xyz/v1/random'
 const d3 = document.getElementById('d33')

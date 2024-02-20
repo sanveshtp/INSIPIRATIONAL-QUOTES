@@ -41,8 +41,8 @@
 
 #cngbut {
     background-color: transparent;
-    border: 1px white solid;
-    color: white;
+    border: 1px rgba(255, 255, 255, 0.3) solid;
+    color: rgba(255, 255, 255, 0.3);
     padding: 5px;
     outline: none;
     border-radius: 3px;
@@ -51,7 +51,9 @@
 
 #cngbut:active,
 #cngbut:hover {
-    color: #00cd0e;
+    color: #ffffff;
+    border: 1px rgba(255, 255, 255) solid;
+
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 10px;
 }
