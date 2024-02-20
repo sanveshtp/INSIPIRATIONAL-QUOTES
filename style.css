@@ -1,0 +1,31 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#d1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #28AFB0;
+}
+
+#d2 {
+    font-family: fira code;
+    text-align: center;
+    /* background-color: #19647E; */
+}
+
+#d33 {
+    color: white;
+    background-color: #19647E;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+#auth {
+    text-align: right;
+}
