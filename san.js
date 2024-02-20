@@ -12,23 +12,12 @@ async function a() {
     let data = await x.json()
     // console.log(data.slip.advice);
     quo.innerHTML = String(data.slip.advice).toUpperCase() + '<div id="auth"><p>-SANVESH</p></div > '
-    d1.style.backgroundColor = '#' + (Math.random() * 0xfffff * 1000000).toString(16).slice(0, 6)
+    let clr = '#' + (Math.random() * 0xfffff * 1000000).toString(16).slice(0, 3)
+    d1.style.backgroundColor = clr
+    console.log(clr);
 }
 
 a()
-
-
-// d3.animate[
-//     {
-//         0 {
-//             transform: scale(0);
-//         },
-
-//         100 {
-//             transform: scale(1.4);
-//         }
-//     }
-// ]
 
 
 
