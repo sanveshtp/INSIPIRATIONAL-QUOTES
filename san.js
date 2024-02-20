@@ -11,6 +11,7 @@ let ran;
 but.addEventListener("click", a)
 
 async function a() {
+    d1.style.backgroundColor = '#' + (Math.random() * 0xfffff * 1000000).toString(16).slice(0, 6)
     let jsn = (Math.floor(Math.random() * 4))
     switch (jsn) {
         case 0:
@@ -36,8 +37,9 @@ async function a() {
             quo.innerHTML = `${data4.quote.toUpperCase()}<p>-${data4.author}</p>`
             break
     }
-    d1.style.backgroundColor = '#' + (Math.random() * 0xfffff * 1000000).toString(16).slice(0, 6)
 }
+
+a()
 
 
 
