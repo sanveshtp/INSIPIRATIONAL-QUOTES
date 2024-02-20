@@ -30,7 +30,7 @@
     border-radius: 3px;
     margin: 10px;
     padding: 1rem;
-    padding-bottom: 1rem;
+
     font-weight: bolder;
 }
 
@@ -49,8 +49,9 @@
     transform: scale(01.2);
 }
 
-#cngbut:active {
-    color: white;
+#cngbut:active,
+#cngbut:hover {
+    color: #00cd0e;
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 10px;
 }

@@ -12,31 +12,32 @@ let ran;
 but.addEventListener("click", a)
 
 async function a() {
+    let jsn = (Math.floor(Math.random() * 4))
+    switch (jsn) {
+        case 0:
+            let x = await fetch(url)
+            let data = await x.json()
+            quo.innerHTML = String(data.slip.advice).toUpperCase() + '<p>-SANVESH</p>'
+            break
+        case 1:
+            let n = await fetch(urlm)
+            let data2 = await n.json()
+            quo.innerHTML = `${data2.sentence.toUpperCase()}<p>-${data2.character.name}</p>`
+            break
 
-    let x = await fetch(url)
-    let data = await x.json()
-    let fin = String(data.slip.advice).toUpperCase() + '<p>-SANVESH</p>'
+        case 2:
+            let m = await fetch(url1)
+            let data3 = await m.json()
+            quo.innerHTML = `${data3[0].content.toUpperCase()}<p>-${data3[0].author}</p>`
+            break
 
-    let n = await fetch(urlm)
-    let data2 = await n.json()
-    let fin2 = `${data2.sentence.toUpperCase()}<p>-${data2.character.name}</p>`
-
-    let m = await fetch(url1)
-    let data3 = await m.json()
-    let fin3 = `${data3[0].content}<p>-${data3[0].author}</p>`
-
-
-    let xx = await fetch(url3)
-    let data4 = await xx.json()
-    console.log(data3[0]);
-    let fin4 = `${data3[0].content}<p>-${data3[0].author}</p>`
-
-    ran = [fin, fin2, fin3, fin4]
-    quo.innerHTML = ran[Math.floor(Math.random() * 4)]
-
-    let clr = '#' + (Math.random() * 0xfffff * 1000000).toString(16).slice(0, 3)
-    d1.style.backgroundColor = clr
-
+        case 3:
+            let xx = await fetch(url3)
+            let data4 = await xx.json()
+            quo.innerHTML = `${data4.quote.toUpperCase()}<p>-${data4.author}</p>`
+            break
+    }
+    d1.style.backgroundColor = '#' + (Math.random() * 0xfffff * 1000000).toString(16).slice(0, 6)
 }
 
 
