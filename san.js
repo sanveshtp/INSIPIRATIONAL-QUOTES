@@ -1,4 +1,4 @@
-const url = '	https://api.adviceslip.com/advice'
+const url = 'https://api.adviceslip.com/advice'
 const url1 = 'https://api.quotable.io/quotes/random'
 const url3 = 'https://stoic.tekloon.net/stoic-quote'
 const urlm = 'https://api.gameofthronesquotes.xyz/v1/random'
